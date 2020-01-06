@@ -1,0 +1,18 @@
+name: context_extensions
+description: variuos extentions on build context to accsess inherated widgets data
+version: 0.0.1
+author: aligator <ali.gh2236@gmail.com>
+homepage: https://aligator.ir
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
