@@ -1,8 +1,6 @@
 # context_extentions
 
-Various extensions on BuildContext to access inherited widget's state
-
-## Accessing inherited widget's state
+## Getting inherited widget's state
 
 ```dart
  var themeData = context.theme;
@@ -12,11 +10,15 @@ Various extensions on BuildContext to access inherited widget's state
  var navigator = context.navigator;
  
  var overlay = context.overlay;
+ 
+ var mediaQuery = context.mediaQuery;
 ```
 
 ## Theme properties
 
 ```dart
+var textTheme = context.textTheme;
+
 var colorPrimary = context.primaryColor;
 
 var colorAccent = context.accentColor;
@@ -26,7 +28,7 @@ var colorCanvas = context.canvasColor;
 var colorBackground = context.BackgroundColor;
 ```
 
-## Navigator
+## Navigator helpers
 
 ```dart
 
@@ -34,10 +36,38 @@ context.push((c) => NaxtPage());
 
 context.pop();
 
-context.showSnackbar(
-    SnackBar(
-        content: Text('text'),
-        ),
-    );
+```
+
+## MediaQuery properties
+
+```dart
+
+var screenSize = context.screenSize;
+
+var screenPadding = context.screenPadding;
+
+```
+
+## Scaffold helpers
+
+```dart
+
+context.showSnackbar(SnackBar(content: Tex('text')));
+
+```
+
+## Overlay helpers
+
+```dart
+
+var overlayEntry = context.addOverlay((context){
+  return Align(
+    alignment: AlignmentDirectional.bottomStart,
+    child: Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text('overlay'),
+    ),
+  );
+});
 
 ```

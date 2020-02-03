@@ -1,5 +1,5 @@
 name: context_extensions
-description: variuos extentions on build context to accsess inherated widgets data
+description: Various extensions on BuildContext to access inherited widget's state
 version: 0.1.0
 author: aligator <ali.gh2236@gmail.com>
 homepage: https://aligator.ir
