@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 ///
 /// Contains extensions for easier access to [Overlay] and [OverlayState] using [BuildContext]
 ///
 extension OverlayContext on BuildContext {
-
   ///
   /// Returns The state from the closest instance of this class that encloses the given context.
   ///

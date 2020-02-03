@@ -20,7 +20,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
   OverlayEntry _overlayEntry;
 
   @override
@@ -31,8 +30,8 @@ class _MainPageState extends State<MainPage> {
         children: <Widget>[
           FlatButton(
             onPressed: () {
-              if(_overlayEntry==null){
-                _overlayEntry = context.addOverlay((context){
+              if (_overlayEntry == null) {
+                _overlayEntry = context.addOverlay((context) {
                   return Align(
                     alignment: AlignmentDirectional.bottomStart,
                     child: Padding(

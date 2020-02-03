@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 ///
 /// Contains extensions for easier access to [Navigator] and [NavigatorState] using [BuildContext]
 ///
 extension NavigatorContext on BuildContext {
-
   ///
   /// Returns The state from the closest instance of this class that encloses the given context.
   ///
@@ -18,7 +16,7 @@ extension NavigatorContext on BuildContext {
   ///
   /// Will return a value when the built widget calls [pop]
   ///
-  Future<T> push<T>(WidgetBuilder builder) async{
+  Future<T> push<T>(WidgetBuilder builder) async {
     return await this.navigator.push<T>(MaterialPageRoute(builder: builder));
   }
 
@@ -27,6 +25,5 @@ extension NavigatorContext on BuildContext {
   ///
   /// Will return the [result] to the caller of [push]
   ///
-  bool pop<T>([T result])=> this.navigator.pop<T>(result);
-
+  bool pop<T>([T result]) => this.navigator.pop<T>(result);
 }

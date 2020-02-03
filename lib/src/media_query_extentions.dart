@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 ///
 /// Contains extensions for easier access to [MediaQuery] and [MediaQueryData] using [BuildContext]
 ///
 extension MediaQueryContext on BuildContext {
-
   ///
   /// Returns an instance of [MediaQueryData]
   /// which can be use to get information about the screen
@@ -30,5 +28,4 @@ extension MediaQueryContext on BuildContext {
   /// useful for example if you need to know the size of the status bar in android
   ///
   EdgeInsets get screenPadding => this.mediaQuery.padding;
-
 }
