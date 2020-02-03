@@ -1,34 +1,8 @@
 # context_extentions
 
-variuos extensions on BuildContext to accsess inherated widgets state
+Various extensions on BuildContext to access inherited widget's state
 
 ## Accessing inherited widget's state
-
-using the `of` helper method in inherited widgets:
-
-```dart
-var themeData = Theme.of(context);
-
- var scaffold = Scaffold.of(context);
- 
- var navigator = Navigator.of(context);
- 
- var overlay = Overlay.of(context);
-```
-
-Only using context:
-
-```dart
-var themeData = context.dependOnInheritedWidgetOfExactType<_InheritedTheme>();
-
- var scaffold = context.dependOnInheritedWidgetOfExactType<ScaffoldState>();
- 
- var navigator = context.dependOnInheritedWidgetOfExactType<NavigatorState>();
- 
- var overlay = context.dependOnInheritedWidgetOfExactType<OverlayState>();
-```
-
-Using context_extensions (if you really hate parenthesis):
 
 ```dart
  var themeData = context.theme;
@@ -40,7 +14,7 @@ Using context_extensions (if you really hate parenthesis):
  var overlay = context.overlay;
 ```
 
-## Helper getter
+## Theme properties
 
 ```dart
 var colorPrimary = context.primaryColor;
@@ -52,22 +26,18 @@ var colorCanvas = context.canvasColor;
 var colorBackground = context.BackgroundColor;
 ```
 
-## Helper methods 
+## Navigator
 
 ```dart
 
 context.push((c) => NaxtPage());
 
-``` 
-
-```dart
-
 context.pop();
 
-```
-
-```dart
-
-context.showSnackbar(SnackBar(content: Text('text')));
+context.showSnackbar(
+    SnackBar(
+        content: Text('text'),
+        ),
+    );
 
 ```
