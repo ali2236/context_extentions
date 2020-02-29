@@ -71,3 +71,9 @@ var overlayEntry = context.addOverlay((context){
 });
 
 ```
+
+## Action helper
+
+```dart
+context.invokeAction(intent);
+```

@@ -25,5 +25,5 @@ extension NavigatorContext on BuildContext {
   ///
   /// Will return the [result] to the caller of [push]
   ///
-  bool pop<T>([T result]) => this.navigator.pop<T>(result);
+  void pop<T>([T result]) => this.navigator.pop<T>(result);
 }

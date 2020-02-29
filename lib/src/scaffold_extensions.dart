@@ -18,7 +18,5 @@ extension ScaffoldContext on BuildContext {
   /// If you call this function too quickly, the new snackbar is added to a
   /// queue and displayed when the current one disappears.
   ///
-  void showSnackbar(SnackBar snackbar) {
-    this.scaffold.showSnackBar(snackbar);
-  }
+  void showSnackbar(SnackBar snackbar) => this.scaffold.showSnackBar(snackbar);
 }
