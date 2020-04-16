@@ -52,7 +52,7 @@ var screenPadding = context.screenPadding;
 
 ```dart
 
-context.showSnackbar(SnackBar(content: Tex('text')));
+context.showSnackBar(SnackBar(content: Tex('text')));
 
 ```
 
@@ -76,4 +76,20 @@ var overlayEntry = context.addOverlay((context){
 
 ```dart
 context.invokeAction(intent);
+```
+
+## Form helper
+
+```dart
+if(context.form.validate()){
+  /* ... */
+} else {
+  /* ... */
+}
+```
+
+## Localization helper
+
+```dart
+var locale = context.locale
 ```

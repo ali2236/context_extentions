@@ -1,3 +1,9 @@
+## [0.3.0]
+
+* added form extensions
+* added local extension
+* renamed `showSnackbar` to `showSnackBar`
+
 ## [0.2.0]
 
 * fixed a bug with new flutter version incompatibility
