@@ -1,7 +1,6 @@
 name: context_extensions
 description: Various extensions on BuildContext to access inherited widget's state
-version: 0.3.0
-author: aligator <ali.gh2236@gmail.com>
+version: 0.3.0+1
 homepage: https://github.com/ali2236/context_extentions
 
 environment:
