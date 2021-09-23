@@ -20,7 +20,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  OverlayEntry _overlayEntry;
+  OverlayEntry? _overlayEntry;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(),
       body: Column(
         children: <Widget>[
-          FlatButton(
+          ElevatedButton(
             onPressed: () {
               if (_overlayEntry == null) {
                 _overlayEntry = context.addOverlay((context) {
@@ -41,7 +41,7 @@ class _MainPageState extends State<MainPage> {
                   );
                 });
               } else {
-                _overlayEntry.remove();
+                _overlayEntry!.remove();
                 _overlayEntry = null;
               }
             },

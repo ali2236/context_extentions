@@ -16,8 +16,8 @@ extension NavigatorContext on BuildContext {
   ///
   /// Will return a value when the built widget calls [pop]
   ///
-  Future<T> push<T>(WidgetBuilder builder) async {
-    return await this.navigator.push<T>(MaterialPageRoute(builder: builder));
+  Future<T?> push<T>(WidgetBuilder builder) {
+    return this.navigator.push<T>(MaterialPageRoute(builder: builder));
   }
 
   ///
@@ -25,5 +25,5 @@ extension NavigatorContext on BuildContext {
   ///
   /// Will return the [result] to the caller of [push]
   ///
-  void pop<T>([T result]) => this.navigator.pop<T>(result);
+  void pop<T>([T? result]) => this.navigator.pop<T>(result);
 }

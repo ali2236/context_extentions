@@ -9,5 +9,5 @@ extension FormContext on BuildContext {
   ///
   /// It is used for validating forms
   ///
-  FormState get form => Form.of(this);
+  FormState? get form => Form.of(this);
 }

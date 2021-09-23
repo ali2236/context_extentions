@@ -13,6 +13,6 @@ extension ActionContext on BuildContext {
   ///
   /// Returns true if an action was successfully invoked.
   ///
-  bool invokeAction(Intent intent, {bool nullOk}) =>
-      Actions.invoke(this, intent, nullOk: nullOk);
+  Object? invokeAction<T extends Intent>(T intent) =>
+      Actions.invoke(this, intent);
 }

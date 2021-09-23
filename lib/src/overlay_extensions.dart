@@ -9,7 +9,7 @@ extension OverlayContext on BuildContext {
   ///
   /// It is used for showing widgets on top of everything.
   ///
-  OverlayState get overlay => Overlay.of(this);
+  OverlayState? get overlay => Overlay.of(this);
 
   ///
   /// Insert the given widget into the overlay.
@@ -17,7 +17,7 @@ extension OverlayContext on BuildContext {
   ///
   OverlayEntry addOverlay(WidgetBuilder builder) {
     var entry = OverlayEntry(builder: builder);
-    this.overlay.insert(entry);
+    this.overlay?.insert(entry);
     return entry;
   }
 }

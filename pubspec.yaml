@@ -1,10 +1,10 @@
 name: context_extensions
 description: Various extensions on BuildContext to access inherited widget's state
-version: 0.3.0+1
+version: 1.0.0
 homepage: https://github.com/ali2236/context_extentions
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

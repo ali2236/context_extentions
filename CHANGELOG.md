@@ -1,5 +1,9 @@
 ## [0.3.0]
 
+* null-safety
+
+## [0.3.0]
+
 * added form extensions
 * added local extension
 * renamed `showSnackbar` to `showSnackBar`
