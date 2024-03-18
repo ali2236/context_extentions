@@ -16,24 +16,8 @@ extension ThemeContext on BuildContext {
   TextTheme get textTheme => this.theme.textTheme;
 
   ///
-  /// The foreground color for widgets (knobs, text, overscroll edge effect, etc).
+  /// Material Design 3 Color Scheme.
   ///
-  /// Accent color is also known as the secondary color.
-  ///
-  Color get accentColor => this.theme.accentColor;
+  ColorScheme get colorScheme => this.theme.colorScheme;
 
-  ///
-  /// The background color for major parts of the app (toolbars, tab bars, etc).
-  ///
-  Color get primaryColor => this.theme.primaryColor;
-
-  ///
-  /// A color that contrasts with the [primaryColor].
-  ///
-  Color get backgroundColor => this.theme.backgroundColor;
-
-  ///
-  /// The default color of [MaterialType.canvas] [Material].
-  ///
-  Color get canvasColor => this.theme.canvasColor;
 }
